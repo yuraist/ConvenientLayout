@@ -8,12 +8,18 @@
 
 /* Begin PBXBuildFile section */
 		BE74F628231E88C3003AC578 /* ConvenientLayout.h in Headers */ = {isa = PBXBuildFile; fileRef = BE74F626231E88C3003AC578 /* ConvenientLayout.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BE74F62F231E88E3003AC578 /* Extensions+String.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE74F62E231E88E3003AC578 /* Extensions+String.swift */; };
+		BE74F631231E88EA003AC578 /* Extensions+UIImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE74F630231E88EA003AC578 /* Extensions+UIImageView.swift */; };
+		BE74F633231E8A0F003AC578 /* Extensions+UIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE74F632231E8A0F003AC578 /* Extensions+UIView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		BE74F623231E88C3003AC578 /* ConvenientLayout.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ConvenientLayout.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		BE74F626231E88C3003AC578 /* ConvenientLayout.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ConvenientLayout.h; sourceTree = "<group>"; };
 		BE74F627231E88C3003AC578 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BE74F62E231E88E3003AC578 /* Extensions+String.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Extensions+String.swift"; sourceTree = "<group>"; };
+		BE74F630231E88EA003AC578 /* Extensions+UIImageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Extensions+UIImageView.swift"; sourceTree = "<group>"; };
+		BE74F632231E8A0F003AC578 /* Extensions+UIView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Extensions+UIView.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -47,6 +53,9 @@
 			isa = PBXGroup;
 			children = (
 				BE74F626231E88C3003AC578 /* ConvenientLayout.h */,
+				BE74F630231E88EA003AC578 /* Extensions+UIImageView.swift */,
+				BE74F632231E8A0F003AC578 /* Extensions+UIView.swift */,
+				BE74F62E231E88E3003AC578 /* Extensions+String.swift */,
 				BE74F627231E88C3003AC578 /* Info.plist */,
 			);
 			path = ConvenientLayout;
@@ -95,6 +104,7 @@
 				TargetAttributes = {
 					BE74F622231E88C3003AC578 = {
 						CreatedOnToolsVersion = 10.3;
+						LastSwiftMigration = 1030;
 					};
 				};
 			};
@@ -130,6 +140,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BE74F631231E88EA003AC578 /* Extensions+UIImageView.swift in Sources */,
+				BE74F62F231E88E3003AC578 /* Extensions+String.swift in Sources */,
+				BE74F633231E8A0F003AC578 /* Extensions+UIView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -261,6 +274,7 @@
 		BE74F62C231E88C3003AC578 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
@@ -278,6 +292,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.yuraist.ConvenientLayout;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -286,6 +301,7 @@
 		BE74F62D231E88C3003AC578 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
