@@ -10,7 +10,7 @@ import UIKit
 
 let imageCache = NSCache<NSString, UIImage>()
 
-extension UIImageView {
+public extension UIImageView {
   /// Loads an image from the urlString using cache
   /** Sets the image retrieved from the cache else loads the image from the urlString and stores it in the cache
    - parameters:

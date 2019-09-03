@@ -8,7 +8,8 @@
 
 import UIKit
 
-extension UIView {
+public extension UIView {
+  
   func anchor(top: NSLayoutYAxisAnchor?, leading: NSLayoutXAxisAnchor?, bottom: NSLayoutYAxisAnchor?, trailing: NSLayoutXAxisAnchor?, padding: UIEdgeInsets = .zero, size: CGSize = .zero) {
     translatesAutoresizingMaskIntoConstraints = false
     
@@ -72,4 +73,5 @@ extension UIView {
       addSubview(view)
     }
   }
+  
 }
